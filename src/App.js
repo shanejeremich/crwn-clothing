@@ -10,7 +10,7 @@ import HomePage from "./pages/home/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import Header from "./layout/header/header.component";
 import SignInAndSignUp from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
-import { setCurrentUser } from "./state/actions/user";
+import { setCurrentUser } from "./state/actions/user/user.actions";
 
 class App extends Component {
   unsubscribeFromAuth = null;
