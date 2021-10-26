@@ -6,21 +6,21 @@ const SECTIONS_DATA = [
     // imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
     imageUrl: "images/hats.png", // local file in public/images/
     id: 1,
-    linkUrl: "shop/hats"
+    linkUrl: "shop/hats",
   },
   {
     title: "jackets",
     // imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
     imageUrl: "images/jackets.png", // local file in public/images/
     id: 2,
-    linkUrl: "shop/jackets"
+    linkUrl: "shop/jackets",
   },
   {
     title: "sneakers",
     // imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
     imageUrl: "images/sneakers.png", // local file in public/images/
     id: 3,
-    linkUrl: "shop/sneakers"
+    linkUrl: "shop/sneakers",
   },
   {
     title: "womens",
@@ -28,7 +28,7 @@ const SECTIONS_DATA = [
     imageUrl: "images/womens.png", // local file in public/images/
     size: "large",
     id: 4,
-    linkUrl: "shop/womens"
+    linkUrl: "shop/womens",
   },
   {
     title: "mens",
@@ -36,8 +36,8 @@ const SECTIONS_DATA = [
     imageUrl: "images/men.png", // local file in public/images/
     size: "large",
     id: 5,
-    linkUrl: "shop/mens"
-  }
+    linkUrl: "shop/mens",
+  },
 ];
 
 export default SECTIONS_DATA;

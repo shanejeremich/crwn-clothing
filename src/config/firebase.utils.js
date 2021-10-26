@@ -9,7 +9,7 @@ const config = {
   storageBucket: "crwn-db-15bda.appspot.com",
   messagingSenderId: "968306789908",
   appId: "1:968306789908:web:886757265c857d483ae101",
-  measurementId: "G-BFZ3RHVHRV"
+  measurementId: "G-BFZ3RHVHRV",
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
@@ -27,7 +27,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         displayName,
         email,
         createdAt,
-        ...additionalData
+        ...additionalData,
       });
     } catch (err) {
       console.log("error creating user", err.message);

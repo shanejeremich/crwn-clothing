@@ -1,18 +1,17 @@
 import React, { Component } from "react";
-
-import "./sign-in.styles.scss";
+import { auth, signInWithGoogle } from "../../config/firebase.utils";
 
 import CustomButton from "../../common/custom-button/custom-button.component";
 import FormInput from "../form-input/form-input.component";
-import { auth, signInWithGoogle } from "../../config/firebase.utils";
 
+import "./sign-in.styles.scss";
 class SignIn extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       email: "",
-      password: ""
+      password: "",
     };
   }
 
@@ -62,7 +61,10 @@ class SignIn extends Component {
 
           <div className="buttons">
             <CustomButton type="submit">Sign In</CustomButton>
-            <CustomButton type="button" onClick={signInWithGoogle} isGoogleSignIn>
+            <CustomButton
+              type="button"
+              onClick={signInWithGoogle}
+              isGoogleSignIn>
               Sign in with Google
             </CustomButton>
           </div>

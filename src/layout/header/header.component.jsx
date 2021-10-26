@@ -1,13 +1,14 @@
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { SIGNIN } from "../../api";
-
-import { ReactComponent as Logo } from "../../assets/crown.svg";
-import CartIcon from "../../layout/cart-icon/cart-icon.component";
 import { auth } from "../../config/firebase.utils";
 
-import "./header.styles.scss";
+import CartIcon from "../../layout/cart-icon/cart-icon.component";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
+
+import { ReactComponent as Logo } from "../../assets/crown.svg";
+import "./header.styles.scss";
+
+import { SIGNIN } from "../../api";
 
 const Header = ({ currentUser, hidden }) => {
   return (
@@ -41,7 +42,7 @@ const Header = ({ currentUser, hidden }) => {
 
 const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
   currentUser,
-  hidden
+  hidden,
 });
 
 export default connect(mapStateToProps)(Header);

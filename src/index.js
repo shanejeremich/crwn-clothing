@@ -2,11 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
-import store from "./state/store";
 
 import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
+
+import store from "./state/redux/store";
 
 ReactDOM.render(
   <React.StrictMode>

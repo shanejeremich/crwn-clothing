@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-
-import "./sign-up.styles.scss";
+import { auth, createUserProfileDocument } from "../../config/firebase.utils";
 
 import FormInput from "../form-input/form-input.component";
 import CustomButton from "../../common/custom-button/custom-button.component";
-import { auth, createUserProfileDocument } from "../../config/firebase.utils";
 
+import "./sign-up.styles.scss";
 class SignUp extends Component {
   constructor() {
     super();
@@ -14,7 +13,7 @@ class SignUp extends Component {
       displayName: "",
       email: "",
       password: "",
-      confirmPassword: ""
+      confirmPassword: "",
     };
   }
 
@@ -28,14 +27,17 @@ class SignUp extends Component {
     }
 
     try {
-      const { user } = await auth.createUserWithEmailAndPassword(email, password);
+      const { user } = await auth.createUserWithEmailAndPassword(
+        email,
+        password
+      );
 
       await createUserProfileDocument(user, { displayName });
       this.setState({
         displayName: "",
         email: "",
         password: "",
-        confirmPassword: ""
+        confirmPassword: "",
       });
     } catch (err) {
       console.error(err);
@@ -64,7 +66,14 @@ class SignUp extends Component {
             required
           />
 
-          <FormInput type="email" name="email" value={email} onChange={this.handleChange} label="email" required />
+          <FormInput
+            type="email"
+            name="email"
+            value={email}
+            onChange={this.handleChange}
+            label="email"
+            required
+          />
 
           <FormInput
             type="password"
