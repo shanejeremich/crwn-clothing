@@ -1,3 +1,3 @@
-import { ROOT, SHOP, SIGNIN } from "./CONSTANTS";
+import { ROOT, SHOP, SIGNIN, CHECKOUT } from "./CONSTANTS";
 
-export { ROOT, SHOP, SIGNIN };
+export { ROOT, SHOP, SIGNIN, CHECKOUT };
