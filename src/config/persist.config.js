@@ -4,4 +4,5 @@ export const persistConfig = {
   key: "root",
   storage,
   whitelist: ["cart"],
+  blacklist: ["shop"],
 };

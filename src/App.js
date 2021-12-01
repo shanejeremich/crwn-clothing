@@ -22,11 +22,11 @@ class App extends Component {
   componentDidMount() {
     const { setCurrentUser } = this.props;
 
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
 
-        userRef.onSnapshot((snapshot) => {
+        userRef.onSnapshot(snapshot => {
           setCurrentUser({
             id: snapshot.id,
             ...snapshot.data(),
@@ -43,7 +43,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        .
         <Header />
         <Switch>
           <Route exact path={ROOT} component={HomePage} />
@@ -52,9 +51,7 @@ class App extends Component {
           <Route
             exact
             path={SIGNIN}
-            render={() =>
-              this.props.currentUser ? <Redirect to="/" /> : <SignInAndSignUp />
-            }
+            render={() => (this.props.currentUser ? <Redirect to="/" /> : <SignInAndSignUp />)}
           />
         </Switch>
       </div>
@@ -66,8 +63,8 @@ const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  setCurrentUser: (user) => dispatch(setCurrentUser(user)),
+const mapDispatchToProps = dispatch => ({
+  setCurrentUser: user => dispatch(setCurrentUser(user)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
