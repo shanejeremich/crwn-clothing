@@ -80,4 +80,3 @@ This application is a react app that demostrates a demo build of a clothing stor
     * start - starts the production server after a build is created
     * test - runs tests in **tests** directory
     * eject - copy the configuration files and dependencies into the project so you have full control over them
-    * deploy - publishes build folder to gh-pages branch
