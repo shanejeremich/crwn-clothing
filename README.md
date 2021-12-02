@@ -2,7 +2,7 @@
 
 You can find the deployed project at [Crown Clothing](https://crwn-clothing-v1.herokuapp.com/).
 
-This application is a react app that demostrates a demo build of a clothing store called Crown Clothing. Crown Clothing uses Firebase as its database and user authentication and for payments, we are using Stripe. This application is hosted on Heroku.
+This application is a react app that demostrates a demo build of a clothing store called Crown Clothing. Crown Clothing uses Firebase as its database and user authentication and for payments, we are using Stripe. For state management we are using Redux. This application is hosted on Heroku.
 
 ### Features to Add to next Release
 
@@ -45,6 +45,7 @@ This application is a react app that demostrates a demo build of a clothing stor
 ![React](https://img.shields.io/badge/react-v17.0.1-blue.svg)
 ![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?logo=eslint&logoColor=white)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
 ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=flat&logo=firebase)
 ![Stripe](https://img.shields.io/badge/Stripe-626CD9?style=flat&logo=Stripe&logoColor=white)
 ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=flat&logo=heroku&logoColor=white)
