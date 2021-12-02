@@ -1,6 +1,6 @@
 # Crown Clothing
 
-You can find the deployed project at [Crown Clothing](https://crwn-clothing-v1.herokuapp.com/). This is not the complete version, this is only the first release with a couple features. This project still needs to be built out with future releases/added features.
+You can find the deployed project at [Crown Clothing](https://crwn-clothing-v1.herokuapp.com/).
 
 This application is a react app that demostrates a demo build of a clothing store called Crown Clothing. Crown Clothing uses Firebase as its database and user authentication and for payments, we are using Stripe. This application is hosted on Heroku.
 
@@ -49,7 +49,9 @@ This application is a react app that demostrates a demo build of a clothing stor
 ![Stripe](https://img.shields.io/badge/Stripe-626CD9?style=flat&logo=Stripe&logoColor=white)
 ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=flat&logo=heroku&logoColor=white)
 
-> When using Okta for authentication, the app will need to run locally on port 3000.
+> For payments in checkout, please use any test card from [Stripe Test Docs](https://stripe.com/docs/testing)
+> <br>
+> One I like to use is 4242 4242 4242 4242 - Exp: 01/22 - CVC: 123
 
 ### Key Features
 
