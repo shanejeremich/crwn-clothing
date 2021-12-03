@@ -59,7 +59,7 @@ This application is a react app that demostrates a demo build of a clothing stor
 - Integration of Firebase for Authentication and Users
 - Integration of Stripe for payments
 
-#### Front end deployed to `GitHub Pages`
+### Front end deployed to `Heroku`
 > [Crown Clothing](https://crwn-clothing-v1.herokuapp.com/)
 
 #### Back end is using Firebase
