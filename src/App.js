@@ -8,14 +8,13 @@ import HomePage from "./pages/home/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import SignInAndSignUp from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
-
 import Header from "./layout/header/header.component";
 
 import { setCurrentUser } from "./state/redux/user/user.actions";
 import { selectCurrentUser } from "./state/redux/user/user.selectors";
-
 import { ROOT, SHOP, SIGNIN, CHECKOUT } from "./api";
-import "./scss/App.scss";
+
+import "./sass/style.scss";
 class App extends Component {
   unsubscribeFromAuth = null;
 
