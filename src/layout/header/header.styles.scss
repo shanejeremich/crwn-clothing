@@ -1,16 +1,16 @@
 .header {
-  height: 70px;
+  height: 7rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 
   .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 300px;
+    width: 30rem;
   }
 
   .logo {
@@ -19,7 +19,7 @@
 
   .title {
     width: 75%;
-    font-size: 1.75rem;
+    font-size: 2.8rem;
   }
 
   .options {
@@ -30,9 +30,9 @@
     justify-content: flex-end;
 
     .option {
-      padding: 10px 15px;
+      padding: 1rem 1.5rem;
       cursor: pointer;
-      font-size: 1.2rem;
+      font-size: 1.92rem;
     }
   }
 }
