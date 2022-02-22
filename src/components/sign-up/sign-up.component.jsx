@@ -27,10 +27,7 @@ class SignUp extends Component {
     }
 
     try {
-      const { user } = await auth.createUserWithEmailAndPassword(
-        email,
-        password
-      );
+      const { user } = await auth.createUserWithEmailAndPassword(email, password);
 
       await createUserProfileDocument(user, { displayName });
       this.setState({
@@ -66,14 +63,7 @@ class SignUp extends Component {
             required
           />
 
-          <FormInput
-            type="email"
-            name="email"
-            value={email}
-            onChange={this.handleChange}
-            label="email"
-            required
-          />
+          <FormInput type="email" name="email" value={email} onChange={this.handleChange} label="email" required />
 
           <FormInput
             type="password"
@@ -92,7 +82,9 @@ class SignUp extends Component {
             label="Confirm Password"
             required
           />
-          <CustomButton type="submit">SIGN UP</CustomButton>
+          <div className="buttons">
+            <CustomButton type="submit">SIGN UP</CustomButton>
+          </div>
         </form>
       </div>
     );
