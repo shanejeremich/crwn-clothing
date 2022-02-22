@@ -9,6 +9,10 @@
   margin: 0 0.75rem 1.5rem;
   overflow: hidden;
 
+  @media only screen and (max-width: 50em) {
+    height: 20rem;
+  }
+
   &:hover {
     cursor: pointer;
 
@@ -24,6 +28,10 @@
 
   &.large {
     height: 38rem;
+
+    @media only screen and (max-width: 50em) {
+      height: 20rem;
+    }
   }
 
   &:first-child {

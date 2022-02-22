@@ -4,7 +4,7 @@
   height: 5rem;
   letter-spacing: 0.5px;
   line-height: 5rem;
-  padding: 0 3.5rem 0 35rem;
+  padding: 0 3.5rem 0 3.5rem;
   font-size: 1.5rem;
   background-color: black;
   color: white;
@@ -15,20 +15,34 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
+  transition: all 0.3s;
+  margin: 0 auto;
 
-  &:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+  @media only screen and (max-width: 50em) {
+    width: 100%;
   }
 
   &.google-sign-in {
     background-color: #4285f4;
     color: #fff;
 
+    @media only screen and (max-width: 50em) {
+      margin: 2rem 0;
+    }
+  }
+
+  @media (hover: hover) and (pointer: fine) {
     &:hover {
-      background-color: #357ae8;
-      border: none;
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+    }
+
+    &.google-sign-in {
+      &:hover {
+        background-color: #357ae8;
+        border: none;
+      }
     }
   }
 
@@ -37,10 +51,12 @@
     color: black;
     border: 1px solid black;
 
-    &:hover {
-      background-color: black;
-      color: white;
-      border: none;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background-color: black;
+        color: white;
+        border: none;
+      }
     }
   }
 }

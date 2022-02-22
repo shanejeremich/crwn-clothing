@@ -5,6 +5,7 @@ import { auth, createUserProfileDocument } from "./config/firebase.utils";
 import { createStructuredSelector } from "reselect";
 
 import HomePage from "./pages/home/homepage.component";
+import Contact from "./pages/contact/contact.component";
 import ShopPage from "./pages/shop/shop.component";
 import SignInAndSignUp from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
@@ -12,7 +13,7 @@ import Header from "./layout/header/header.component";
 
 import { setCurrentUser } from "./state/redux/user/user.actions";
 import { selectCurrentUser } from "./state/redux/user/user.selectors";
-import { ROOT, SHOP, SIGNIN, CHECKOUT } from "./api";
+import { ROOT, CHECKOUT, CONTACT, SHOP, SIGNIN } from "./api";
 
 import "./sass/style.scss";
 class App extends Component {
@@ -46,6 +47,7 @@ class App extends Component {
         <Switch>
           <Route exact path={ROOT} component={HomePage} />
           <Route path={SHOP} component={ShopPage} />
+          <Route exact path={CONTACT} component={Contact} />
           <Route exact path={CHECKOUT} component={CheckoutPage} />
           <Route
             exact

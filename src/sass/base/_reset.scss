@@ -9,6 +9,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  // @media only screen and (max-width: 50em) {
+  //   font-size: 50%;
+  // }
 }
 
 body {
@@ -17,6 +21,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 2rem 6rem;
+
+  @media only screen and (max-width: 58.125em) {
+    padding: 2rem 1rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    padding: 1rem;
+  }
 }
 
 p,

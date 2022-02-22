@@ -1,5 +1,6 @@
 // prettier-ignore
 export const ROOT = "/",
-SHOP = "/shop",
+CHECKOUT = "/checkout",
+CONTACT = "/contact",
 SIGNIN = "/signin",
-CHECKOUT = "/checkout"
+SHOP = "/shop"

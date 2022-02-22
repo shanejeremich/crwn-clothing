@@ -1,6 +1,12 @@
 .sign-in-and-sign-up {
-  width: 85rem;
-  display: flex;
-  justify-content: space-between;
+  width: max-content;
   margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+
+  @media only screen and (max-width: 50em) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
