@@ -18,7 +18,7 @@
     width: 80%;
     opacity: 0.7;
     position: absolute;
-    top: 25.5rem;
+    top: 23.5rem;
     display: none;
 
     @media only screen and (max-width: 50em) {
@@ -53,8 +53,8 @@
     height: 5%;
     display: flex;
     justify-content: space-between;
-    font-size: 1.8rem;
-    margin: 0 1rem 1rem;
+    font-size: 1.6rem;
+    margin: 0 auto 2rem;
 
     .name {
       width: 90%;
@@ -62,7 +62,7 @@
     }
 
     .price {
-      width: 10%;
+      width: auto;
     }
   }
 }
