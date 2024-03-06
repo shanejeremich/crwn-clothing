@@ -1,6 +1,7 @@
 # Crown Clothing
 
 You can find the deployed project at [Crown Clothing](https://crwn-clothing-v1.herokuapp.com/).
+** link does not work right now, known issue **
 
 This application is a react app that demostrates a demo build of a clothing store called Crown Clothing. Crown Clothing uses Firebase as its database and user authentication and for payments, we are using Stripe. For state management we are using Redux. This application is hosted on Heroku.
 
@@ -34,8 +35,8 @@ This application is a react app that demostrates a demo build of a clothing stor
 
 |                                        [Shane Jeremich](https://github.com/sjeremich23)                                        |
 | :----------------------------------------------------------------------------------------------------------------------------: |
-|                      [<img src="public/images/shane.png" width ="200" />](https://github.com/sjeremich23)                      |
-|                    [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/sjeremich23)                    |
+|                      [<img src="public/images/shane.png" width ="200" />](https://github.com/shanejeremich)                      |
+|                    [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/shanejeremich)                    |
 | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/shanejeremich/) |
 
 <br>
